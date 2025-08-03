@@ -33,8 +33,8 @@ function shortenUrl() {
   }
   const code = generateCode();
   localStorage.setItem(code, longUrl);
-  const shortUrl = \`\${baseURL}?code=\${code}\`;
+  const shortUrl = `${baseURL}?code=${code}`;
   const resultDiv = document.getElementById('result');
-  resultDiv.innerHTML = \`<p>Short URL: <a class="short-link" href="\${shortUrl}" target="_blank">\${shortUrl}</a></p>\`;
+  resultDiv.innerHTML = `<p>Short URL: <a class="short-link" href="${shortUrl}" target="_blank">${shortUrl}</a></p>`;
   input.value = '';
 }
